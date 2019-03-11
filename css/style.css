@@ -1,0 +1,186 @@
+/* Universal styles */
+:root {
+  --font-color: rgba(0, 0, 0, .75);
+  --font-family: 'Josefin Sans', sans-serif;
+}
+
+* {
+  color: var(--font-color);
+  margin: 0;
+  font-family: var(--font-family);
+}
+
+#top {
+  margin: 0;
+  width: 100wh;
+  height: 100vh;
+  display: -webkit-flex;
+  display: flex;
+  text-align: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: #141414 url(../media/rainier2.jpg);
+  background-position: 50%;
+  background-size: cover;
+}
+
+.hero {
+  margin-top: 10%;
+}
+
+svg {
+  position absolute
+  top 50%
+  margin-top -60px
+  left 50%
+  margin-left -225px
+}
+
+.profile-photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.header-text {
+  font-weight: bold;
+  color: black;
+}
+
+.small-print {
+  font-size: 14px;
+  margin: 0;
+  color: black
+}
+
+.underline {
+  border-bottom: 6px solid #BDE5D3;
+}
+
+.section {
+  margin: 40px auto;
+  max-width: 850px;
+  box-sizing: border-box;
+}
+
+hr {
+  border-bottom: 6px solid #BDE5D3;
+  width: 150px;
+}
+.flex-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  text-align: center;
+}
+
+.portfolio-text {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  margin: 10px;
+  box-sizing: border-box;
+  flex-direction: column;
+  min-width: 400px;
+  position: relative;
+}
+
+.portfolio-text.blackjack::after, .portfolio-text.wanderlist::after, .portfolio-text.inthesound::after, .portfolio-text.jukebox::after {
+  content: "";
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.portfolio-text.blackjack::after {
+  background: url() no-repeat;
+} 
+
+.portfolio-text.wanderlist::after {
+  background: url() no-repeat;
+} 
+
+.portfolio-text.inthesound::after {
+  background: url() no-repeat;
+} 
+
+.portfolio-text.jukebox::after {
+
+}
+
+.portfolio-text.blackjack {
+  background-size: 180%;
+  background-position: 50% 50%;
+  color: black;
+} 
+
+.portfolio-text.wanderlist {
+  background-size: 180%;
+  background-position: 50% 50%;
+  color: orange;
+}
+
+.portfolio-text.inthesound {
+  background-size: 180%;
+  background-position: 50% 50%;
+  color: blue;
+} 
+
+.portfolio-text.jukebox {
+  background-size: 180%;
+  background-position: 50% 50%;
+  color: rgb(32, 32, 82);
+}
+a {
+  color: rgb(91, 91, 190);
+}
+a:hover {
+  text-decoration: none;
+  color: #BDE5D3;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 100px 0 0 0;
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(32, 32, 82);
+  font-size: 1em;
+  color: white;
+}
+
+footer i, .icon-label {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+footer a:hover .icon-label {
+  border-bottom: 2px solid #BDE5D3;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.contact-title {
+  margin: 20px;
+}
+
+.up {
+  float: right;
+}
