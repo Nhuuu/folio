@@ -228,13 +228,19 @@ hr {
   height: 55%;
 }
 
+
 a {
   color: rgb(91, 91, 190);
 }
+
 a:hover {
   text-decoration: none;
+  color: #BDE5D3;
 }
 
+a:hover i {
+  color: #BDE5D3;
+}
 
 
 /* footer */
@@ -245,7 +251,7 @@ footer {
   margin: 100px 0 0 0;
   padding: 10px;
   text-align: center;
-  background-color: rgb(32, 32, 82);
+  background-color: #394056;
   font-size: 1em;
   color: white;
 }
