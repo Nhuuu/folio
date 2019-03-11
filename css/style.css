@@ -63,6 +63,8 @@ svg {
   box-sizing: border-box;
 }
 
+
+
 hr {
   border-bottom: 6px solid #BDE5D3;
   width: 150px;
@@ -75,78 +77,165 @@ hr {
   margin: 0 auto;
 }
 
+
+/* Portfolio Styles */
+
 .portfolio-item {
   text-align: center;
 }
 
-.portfolio-text {
+.portfolio-rect {
   display: flex;
   justify-content: center;
   height: 200px;
   margin: 10px;
-  box-sizing: border-box;
   flex-direction: column;
   min-width: 400px;
+  /* make this responsive */
+  max-width: 400px;
   position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: #000000;
+  text-align: center;
 }
 
-.portfolio-text.blackjack::after, .portfolio-text.wanderlist::after, .portfolio-text.inthesound::after, .portfolio-text.jukebox::after {
-  content: "";
-  opacity: 0.6;
+.portfolio-rect img {
+  width: 100%;
+}
+
+.portfolio-rect.blackjack, .portfolio-rect.wanderlist, .portfolio-rect.inthesound, .portfolio-rect.jukebox {
+  background-position: 50% 50%;
+  opacity: .8;
+} 
+
+.portfolio-rect * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+  
+.portfolio-rect .portfolio-text {
+  bottom: 0;
+  display: block;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.portfolio-rect h2 {
+  color: white;
+  left: 0;
+  right: 0;
+  letter-spacing: -1px;
+  margin: 0 auto;
+  position: absolute;
+  text-transform: uppercase;
+  bottom: 50%;
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+.portfolio-rect p {
+  color: white;
+  position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  opacity: 0;
+  font-size: 16px;
+  -webkit-transform: translateY(-20%) scale(0.7);
+  transform: translateY(-20%) scale(0.7);
+}
+.portfolio-rect .portfolio-text {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  -webkit-transform: rotate(360deg) translate(-50%, -50%);
+  transform: rotate(360deg) translate(-50%, -50%);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.portfolio-rect .portfolio-text:before,
+.portfolio-rect .portfolio-text:after,
+.portfolio-rect .portfolio-text div:before,
+.portfolio-rect .portfolio-text div:after {
+  background-color: #ffffff;
+  position: absolute;
+  content: "";
+  display: block;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.portfolio-rect .portfolio-text:before,
+.portfolio-rect .portfolio-text:after {
+  width: 65%;
+  height: 2px;
+}
+.portfolio-rect .portfolio-text div:before,
+.portfolio-rect .portfolio-text div:after {
+  width: 2px;
+  height: 65%;
+}
+.portfolio-rect .portfolio-text:before,
+.portfolio-rect .portfolio-text div:before {
+  left: 0;
+  top: 0;
+}
+.portfolio-rect .portfolio-text:after,
+.portfolio-rect .portfolio-text div:after {
   bottom: 0;
   right: 0;
-  position: absolute;
-  z-index: -1;   
 }
 
-.portfolio-text.blackjack::after {
-  background: url() no-repeat;
-} 
-
-.portfolio-text.wanderlist::after {
-  background: url() no-repeat;
-} 
-
-.portfolio-text.inthesound::after {
-  background: url() no-repeat;
-} 
-
-.portfolio-text.jukebox::after {
-
+.portfolio-rect:hover img,
+.portfolio-rect.hover img {
+  opacity: 0.25;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.portfolio-rect:hover h2,
+.portfolio-rect.hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+.portfolio-rect:hover p,
+.portfolio-rect.hover p {
+  opacity: 1;
+  -webkit-transform: translateY(0px) scale(1);
+  transform: translateY(0px) scale(1);
+}
+.portfolio-rect:hover .portfolio-text:before,
+.portfolio-rect.hover .portfolio-text:before {
+  width: 38%;
+}
+.portfolio-rect:hover .portfolio-text div:before,
+.portfolio-rect.hover .portfolio-text div:before {
+  height: 38%;
+}
+.portfolio-rect:hover .portfolio-text:after,
+.portfolio-rect.hover .portfolio-text:after {
+  width: 55%;
+}
+.portfolio-rect:hover .portfolio-text div:after,
+.portfolio-rect.hover .portfolio-text div:after {
+  height: 55%;
 }
 
-.portfolio-text.blackjack {
-  background-size: 180%;
-  background-position: 50% 50%;
-  color: black;
-} 
-
-.portfolio-text.wanderlist {
-  background-size: 180%;
-  background-position: 50% 50%;
-  color: orange;
-}
-
-.portfolio-text.inthesound {
-  background-size: 180%;
-  background-position: 50% 50%;
-  color: blue;
-} 
-
-.portfolio-text.jukebox {
-  background-size: 180%;
-  background-position: 50% 50%;
-  color: rgb(32, 32, 82);
-}
 a {
   color: rgb(91, 91, 190);
 }
 a:hover {
   text-decoration: none;
-  color: #BDE5D3;
 }
+
+
 
 /* footer */
 footer {
@@ -179,8 +268,4 @@ footer a:hover .icon-label {
 
 .contact-title {
   margin: 20px;
-}
-
-.up {
-  float: right;
 }
