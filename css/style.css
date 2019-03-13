@@ -87,12 +87,7 @@ hr {
   border-radius: 50%;
 }
 
-.about-item {
-  flex-grow: 1;
-}
-
 /* Portfolio Styles */
-
 .portfolio-item {
   text-align: center;
 }
@@ -102,7 +97,6 @@ hr {
   height: 200px;
   margin: 10px;
   width: 400px;
-  flex-grow: 1;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
@@ -110,16 +104,13 @@ hr {
   color: #fff;
   background: #000000;
   text-align: center;
+  background-position: 50% 50%;
+  opacity: .8;
 }
 
 .portfolio-rect img {
   width: 100%;
 }
-
-.portfolio-rect.blackjack, .portfolio-rect.wanderlist, .portfolio-rect.inthesound, .portfolio-rect.jukebox {
-  background-position: 50% 50%;
-  opacity: .8;
-} 
 
 .portfolio-rect * {
   -webkit-box-sizing: padding-box;
@@ -296,9 +287,11 @@ footer a:hover .icon-label {
   .flex.nowrap {
     flex-wrap: wrap;
   }
+
   .about-item {
     text-align: center;
   }
+  
   .summary {
     padding: 30px;
   }
@@ -307,9 +300,6 @@ footer a:hover .icon-label {
     height: 16em;
     width: 16em;
     margin: 0 auto;
-  }
-  .portfolio-rect {
-    width: 100%;
   }
   
   svg {
