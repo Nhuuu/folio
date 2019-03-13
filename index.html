@@ -15,52 +15,52 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-      <header id="top">
-        <div class="hero">
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="455px" height="150px" xml:space="preserve">
-            <defs>
-              <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
-                <path fill="#000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
-              </pattern>
-              <text id="text" transform="translate(2,116)" font-size="80">Nhu Q Trinh</text>
-              <mask id="text-mask">
-                <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
-              </mask>
-              <g id="eff">
-                <use x="0" y="0" xlink:href="#text" fill="#a2a3a5"/>
-            <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="80" width="1200" height="50" opacity="0.3">
-              <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="2s"/>
-            </rect>
-            <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="75" width="1600" height="50" opacity="0.3">
-              <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="3s"/>
-            </rect>
-            <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="85" width="800" height="50" opacity="0.3">
-              <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="1.4s"/>
-            </rect>
-                <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="85" width="2000" height="50" opacity="0.3">
-              <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="2.8s"/>
-            </rect>
-              </g>
-            </defs>
-            <use xlink:href="#eff" opacity="0.9" style="mix-blend-mode:color-burn"/>
-          </svg>
+    <header id="top">
+      <div class="hero">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+          <defs>
+            <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+              <path fill="#000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+            </pattern>
+            <text id="text" transform="translate(2,116)">Nhu Q Trinh</text>
+            <mask id="text-mask">
+              <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
+            </mask>
+            <g id="eff">
+              <use x="0" y="0" xlink:href="#text" fill="#a2a3a5"/>
+              <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="80" width="1200" height="50" opacity="0.3">
+                <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="2s"/>
+              </rect>
+              <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="75" width="1600" height="50" opacity="0.3">
+                <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="3s"/>
+              </rect>
+              <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="85" width="800" height="50" opacity="0.3">
+                <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="1.4s"/>
+              </rect>
+              <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="85" width="2000" height="50" opacity="0.3">
+                <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="2.8s"/>
+              </rect>
+            </g>
+          </defs>
+          <use xlink:href="#eff" opacity="0.9" style="mix-blend-mode:color-burn"/>
+        </svg>
 
-          <h4 class="header-text">Full stack developer</h4>
-          <div>
-            <p class="small-print header-text">k<a class="scroll" href="#about"><span class="underline">now me bett</span></a>er</p>
-            <p class="small-print header-text">m<a class="scroll" href="#projects"><span class="underline">y wor</span></a>k</p>
-          </div>
+        <h4 class="header-text">Full stack developer</h4>
+        <div class="small-print header-text">
+          <p>k<a class="scroll" href="#about"><span class="underline">now me bett</span></a>er</p>
+          <p>m<a class="scroll" href="#projects"><span class="underline">y wor</span></a>k</p>
         </div>
-      </header>
+      </div>
+    </header>
 
     <div id="about" class="section">
       <h3>About Me</h3>
       <hr>
-      <div class="row">
-        <div class="col-3">
-            <img src="media/pic2.JPEG" class="profile-photo">
+      <div class="flex nowrap">
+        <div class="about-item photo">
+          <img src="media/pic2.JPEG">
         </div>
-        <div class="col-9">
+        <div class="about-item summary">
           <p>I’m a full stack developer based in Seattle, WA with a background in operations and analysis. My background gives me valuable business insight to bring to the development space. I’m passionate about creating meaningful applications to the social and economic environment. I love learning new technologies and my greatest strength is my desire to dig deep for full comprehension while not overlooking the details.</p>
           <p>When I’m not zoned out reading documentation, I spend my energy on helping to produce a week-long women in tech conference called the <a href="http://womenintechregatta.com" target="_blank">Women in Tech Regatta</a>. Supporting others in their careers and life goals is what I love to do in and outside of the workplace. I'm also a social justice advocate, outdoor enthusiast, animal lover, and one-time marathon runner. (Just the one....) </p>
         </div>
@@ -70,7 +70,7 @@
     <div id="projects" class="section">
       <h3>Featured Projects</h3>
       <hr>
-      <div class="flex-grid">
+      <div class="flex">
         <div class="portfolio-item"> 
           <div class="portfolio-rect blackjack">
             <img src="media/blackjack2.jpg" alt="blackjack">
@@ -99,7 +99,7 @@
         </div>
         <div class="portfolio-item">
           <div class="portfolio-rect inthesound">
-            <img src="media/inthesound3.jpg" alt="wanderlist">
+            <img src="media/inthesound3.jpg" alt="inthesound">
             <div class="portfolio-text">
               <h2>In the Sound</h2>
               <p>React.js</p>
@@ -112,7 +112,7 @@
         </div>
         <div class="portfolio-item">
           <div class="portfolio-rect jukebox">
-            <img src="media/jukebox3.png" alt="wanderlist">
+            <img src="media/jukebox3.png" alt="jukebox">
             <div class="portfolio-text">
               <h2>The Party Jukebox</h2>
               <p>Node.js | Express.js | SQL</p>
@@ -136,7 +136,6 @@
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bubbles.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
